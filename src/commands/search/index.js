@@ -21,7 +21,11 @@ const flags = {
 };
 
 export default function search(args) {
-  if (!args.length) return "Usage: search <query> | search <engine> <query>";
+  if (!args.length)
+    return `Error: missing arguments
+Usage:
+  search <query> | search <engine> <query>
+  Run 'search --help' for more information.`;
 
   const flag = args[0];
   const rest = args.slice(1);
