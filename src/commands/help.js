@@ -7,7 +7,7 @@ export default function help() {
     ["date", "Show current date and time"],
     ["site <url>", "Open a website in new tab"],
     ["search <query>", "Search Google"],
-    ["bookmark", "Manage bookmarks (--create, list)"],
+    ["bookmark", "Manage bookmarks (create, list and more)"],
     ["clear", "Clear the screen"],
     ["help", "Show this help message"],
   ];

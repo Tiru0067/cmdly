@@ -5,10 +5,12 @@ import site from "./site";
 import help from "./help";
 import clear from "./clear";
 import echo from "./echo";
+import cow from "./cow";
 
 export const commands = {
   bookmark,
   clear,
+  cow,
   echo,
   date,
   help,

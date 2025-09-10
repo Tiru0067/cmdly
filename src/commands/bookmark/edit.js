@@ -1,10 +1,10 @@
 import { getBookmarks, saveBookmarks, normalizeUrl } from "./helpers";
 
 export default function edit(args) {
-  const bookmarks = getBookmarks();
   const oldName = args[0];
   if (!oldName)
     return "Usage:\n  bookmark edit <oldName> [--name <newName>] [--url <newUrl>]";
+  const bookmarks = getBookmarks();
   const bookmark = bookmarks.find((b) => b.name === oldName);
   if (!bookmark) return `No bookmark found with name: ${oldName}`;
 
@@ -37,4 +37,3 @@ export default function edit(args) {
   saveBookmarks(bookmarks);
   return `Updated bookmark: ${bookmark.name} -> ${bookmark.url}`;
 }
-``;

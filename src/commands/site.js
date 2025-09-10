@@ -5,5 +5,5 @@ export default function site(args) {
     url = `https://${url}`;
   }
   window.open(url, "_blank");
-  return "Opened ${url}";
+  return `Opened ${url}`;
 }

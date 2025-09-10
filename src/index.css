@@ -25,4 +25,7 @@
   .flex-center {
     @apply flex justify-center items-center;
   }
+  .tabular {
+    tab-size: 4;
+  }
 }

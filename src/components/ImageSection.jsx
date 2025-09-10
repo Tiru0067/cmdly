@@ -7,7 +7,7 @@ const ImageSection = () => {
 
   return (
     <div
-      className="min-w-70 h-full bg-cover bg-center"
+      className="w-full h-[40%] lg:max-w-80 lg:h-full bg-cover bg-center"
       style={{ backgroundImage: `url(${randomImage})` }}
     ></div>
   );

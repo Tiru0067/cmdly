@@ -3,8 +3,8 @@ import Terminal from "./components/Terminal";
 
 function App() {
   return (
-    <div className="w-full h-dvh flex-center text-black bg-white dark:bg-onyx dark:text-white">
-      <div className="w-4xl h-110 rounded-xl bg-gray-200 dark:bg-charcoal overflow-hidden flex">
+    <div className="w-full h-dvh flex-center text-black bg-white dark:bg-onyx dark:text-white lg:p-10">
+      <div className="w-full h-full lg:max-w-5xl lg:h-125 max-md:max-w-full lg:rounded-xl bg-gray-200 dark:bg-charcoal overflow-hidden flex flex-col lg:flex-row transition-all duration-500">
         {/* left */}
         <ImageSection />
 

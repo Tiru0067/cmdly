@@ -54,7 +54,7 @@ const Terminal = () => {
 
   return (
     <div
-      className="w-full h-full overflow-y-auto font-mono no-scrollbar text-sm"
+      className="w-full h-full overflow-y-auto font-mono no-scrollbar text-xs tabular md:text-sm"
       onClick={() => inputRef.current?.focus()}
     >
       {lines.map((line, i) =>
@@ -72,7 +72,7 @@ const Terminal = () => {
           />
         ) : (
           // Plain text output (help, date, search)
-          <div key={i} className="whitespace-pre">
+          <div key={i} className="whitespace-pre-wrap">
             {line.value}
           </div>
         )
